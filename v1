@@ -25,12 +25,10 @@ Thread(target=run).start()
 # -----------------------------
 # Discord Bot Setup
 # -----------------------------
-# ----> PUT YOUR TOKEN HERE <----
-# Option 1 (safe for Replit): use environment variable
-# TOKEN = os.getenv("DISCORD_TOKEN")
-
-# Option 2 (not recommended, only for local testing): put your token directly as a string
-TOKEN = MTQyMDg3Njk5MTU1NjQ4NTE5Mg.Gv2EnX.y5HmkAc4hr-xJivAhbJQNXs9AUV8aNUo6eQJl4
+# -----------------------------
+# SAFE: get your token from environment variables
+# Do NOT put your actual token in the code
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
